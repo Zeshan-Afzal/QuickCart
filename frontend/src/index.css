@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+}
+body {
+  scroll-behavior: smooth;
+  background-color: rgb(242, 245, 248);
+}
+
+.transition-right {
+  transition: right 0.5s ease-in-out;
+}
+.right-click {
+  right: -25%;
+}
